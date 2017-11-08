@@ -39,4 +39,4 @@ The code included in this sample is intended to get you quickly started with a N
 ## More information
 
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)
-- [Node.js drive Documentation] (https://github.com/datastax/nodejs-driver)
+- [Node.js drive Documentation](https://github.com/datastax/nodejs-driver)
