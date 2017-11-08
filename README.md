@@ -1,57 +1,41 @@
-# Project Name
+---
+services: cosmos-db
+platforms: nodejs
+author: govindk
+---
 
-(short, 1-3 sentenced, description of the project)
-
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+# Developing a Node.js app with Cassandra API using Azure Cosmos DB
+Azure Cosmos DB is a globally distributed multi-model database. One of the supported APIs is the Cassandra API. This sample walks you through creation of keyspace, table, inserting and querying the data.
 
 
-## Demo
+## Running this sample
+* Before you can run this sample, you must have the following perquisites:
+	* An active Azure Cassandra API account - If you don't have an account, refer to the [Create a Cassandra API account](https://azure.microsoft.com/en-us/documentation/articles/documentdb-create-account/) article.
+	* [Node.js](https://nodejs.org/en/) version v0.10.29 or higher.
+	* [Git](http://git-scm.com/).
+  * [Node.js driver for apache cassandra](https://github.com/datastax/nodejs-driver) // to install the driver - run npm install cassandra-driver 
 
-A demo app is included to show how to use the project.
 
-To run the demo, follow these steps:
+1. Clone this repository using `git clone git@github.com:Azure-Samples/Azure-Samples/azure-cosmos-db-cassandra-node-getting-started.git cosmosdb`.
 
-(Add steps to start up the demo)
+2. Change directories to the repo using `cd cosmosdb`
 
-1.
-2.
-3.
+3. Next, substitute the contactPoint, username, password  `config.js` with your Cosmos DB account's values from connectionstring panel of the portal.
 
-## Resources
+	```
+	config.username = '<fillmein>';
+  config.password = '<fillmein>';
+  config.contactPoint = '<fillmein>:10350';
+	```
 
-(Any additional resources or related projects)
+5. Run `npm install` in a terminal to install required npm modules
+ 
+6. Run `node uprofile.js` in a terminal to start your start your node application.
 
-- Link to supporting information
-- Link to similar sample
-- ...
+## About the code
+The code included in this sample is intended to get you quickly started with a Node.js console application that connects to Azure Cosmos DB with the Cassandra API.
+
+## More information
+
+- [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)
+- [Node.js drive Documentation] (https://github.com/datastax/nodejs-driver)
