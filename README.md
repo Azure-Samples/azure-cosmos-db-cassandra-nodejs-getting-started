@@ -24,8 +24,9 @@ Azure Cosmos DB is a globally distributed multi-model database. One of the suppo
 
 	```
 	config.username = '<fillmein>';
-  config.password = '<fillmein>';
-  config.contactPoint = '<fillmein>:10350';
+	config.password = '<fillmein>';
+	config.contactPoint = '<fillmein>:10350';
+	
 	```
 
 5. Run `npm install` in a terminal to install required npm modules
