@@ -29,39 +29,39 @@ async.series([
     const queries = [
         {
             query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-            params: [1, 'VinodS', 'Dubai', '2017-10-3132']
+            params: [1, 'LyubovK', 'Dubai', '2017-10-3132']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [2, 'MohammedS', 'Toronto', '2017-10-3133']
+          params: [2, 'JiriK', 'Toronto', '2017-10-3133']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [3, 'SiddeshV', 'Mumbai', '2017-10-3134']
+          params: [3, 'IvanH', 'Mumbai', '2017-10-3134']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [4, 'KirilG', 'Seattle', '2017-10-3135']
+          params: [4, 'IvanH', 'Seattle', '2017-10-3135']
         },
                 {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [5, 'GovindS', 'Belgaum', '2017-10-3136']
+          params: [5, 'IvanaV', 'Belgaum', '2017-10-3136']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [6, 'CareyM', 'Seattle', '2017-10-3137']
+          params: [6, 'LiliyaB', 'Seattle', '2017-10-3137']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [7, 'MatiasQ', 'Buenos Aires', '2017-10-3138']
+          params: [7, 'JindrichH', 'Buenos Aires', '2017-10-3138']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [8, 'Samer', 'Seattle', '2017-10-3139']
+          params: [8, 'AdrianaS', 'Seattle', '2017-10-3139']
         },
         {
           query: 'INSERT INTO  uprofile.user  (user_id, user_name , user_bcity) VALUES (?,?,?)',
-          params: [9, 'Shireesh', 'Seattle', '2017-10-3140']
+          params: [9, 'JozefM', 'Seattle', '2017-10-3140']
         }
     ];
     client.batch(queries, { prepare: true}, next);
