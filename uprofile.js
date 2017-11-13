@@ -10,21 +10,10 @@ var ssl_option = {
   cert : fs.readFileSync("path\to\cert"),
   rejectUnauthorized : false,
   secureProtocol: 'TLSv1_2_method'
-  
-	};
+};
 
-const localDatacenter = '';
-  const loadBalancingPolicy = new cassandra.policies.loadBalancing.RoundRobinPolicy(localDatacenter); 
-  const clientOptions = {
-     policies : {
-        loadBalancing : loadBalancingPolicy
-     }
-
-  };
-
-const authProviderLocalCassandra =
- new cassandra.auth.PlainTextAuthProvider(config.username, config.password);
-const client = new cassandra.Client({contactPoints: [config.contactPoint], authProvider: authProviderLocalCassandra, policies:clientOptions, sslOptions:ssl_option});
+const authProviderLocalCassandra = new cassandra.auth.PlainTextAuthProvider(config.username, config.password);
+const client = new cassandra.Client({contactPoints: [config.contactPoint], authProvider: authProviderLocalCassandra, sslOptions:ssl_option});
 
 async.series([
   
