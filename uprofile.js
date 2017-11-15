@@ -19,7 +19,7 @@ async.series([
     client.connect(next);
   },  
   function createKeyspace(next) {
-    var query = "CREATE KEYSPACE IF NOT EXISTS uprofile WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '3' } ";
+    var query = "CREATE KEYSPACE IF NOT EXISTS uprofile WITH replication = {\'class\': \'NetworkTopologyStrategy\', \'datacenter\' : \'1\' }";
     client.execute(query, next);
     console.log("created keyspace");    
   },
