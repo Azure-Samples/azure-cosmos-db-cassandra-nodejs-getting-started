@@ -10,7 +10,7 @@ Azure Cosmos DB is a globally distributed multi-model database. One of the suppo
 
 ## Running this sample
 * Before you can run this sample, you must have the following perquisites:
-	* An active Azure Cassandra API account - If you don't have an account, refer to the [Create a Cassandra API account](https://azure.microsoft.com/en-us/documentation/articles/documentdb-create-account/) article.
+	* An active Azure Cassandra API account - If you don't have an account, refer to the [Create a Cassandra API account](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs) article.
 	* [Node.js](https://nodejs.org/en/) version v0.10.29 or higher.
 	* [Git](http://git-scm.com/).
   * [Node.js driver for apache cassandra](https://github.com/datastax/nodejs-driver) // to install the driver - run npm install cassandra-driver 
