@@ -1,7 +1,11 @@
 ---
-services: cosmos-db
-platforms: nodejs
-author: govindk
+page_type: sample
+languages:
+- javascript
+products:
+- azure
+description: "Azure Cosmos DB is a globally distributed multi-model database. One of the supported APIs is the Cassandra API."
+urlFragment: azure-cosmos-db-cassandra-nodejs-getting-started
 ---
 
 # Developing a Node.js app with Cassandra API using Azure Cosmos DB
