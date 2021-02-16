@@ -20,25 +20,45 @@ Azure Cosmos DB is a globally distributed multi-model database. One of the suppo
   * [Node.js driver for apache cassandra](https://github.com/datastax/nodejs-driver) // to install the driver - run npm install cassandra-driver 
 
 
-1. Clone this repository using `git clone git@github.com:Azure-Samples/Azure-Samples/azure-cosmos-db-cassandra-node-getting-started.git cosmosdb`.
+1. Clone this repository:
 
-2. Change directories to the repo using `cd cosmosdb`
+    ```bash
+	git clone git@github.com:Azure-Samples/Azure-Samples/azure-cosmos-db-cassandra-node-getting-started.git cosmosdb
+    ```
 
-3. Next, substitute the contactPoint, username, password  `config.js` with your Cosmos DB account's values from connectionstring panel of the portal.
+1. Change directories to the repo:
 
+    ```bash
+    cd cosmosdb
+    ```
+
+1. Install npm dependencies:
+
+    ```bash
+    npm install
+    ```
+
+1. Next, substitute the contactPoint, username, password, and Azure region in `config.js` with your Cosmos DB account's values from the Azure portal. Find REGION on the Overview page as Read locations. The remaining settings are on the Settings -> Connection string page. 
+
+    ```javascript
+    module.exports = {
+        username: 'USERNAME',
+        password:
+          'PRIMARY-PASSWORD',
+        contactPoint: 'CONTACT-POINT',
+        keySpace: "uprofile",
+        localDataCenter: "REGION"
+    };
+    ```
+
+1. Run `uprofile.js` in a terminal to start your start your node application:
+
+    ```bash
+	npm start
 	```
-	config.username = '<fillmein>';
-	config.password = '<fillmein>';
-	config.contactPoint = '<fillmein>:10350';
-	
-	```
-
-5. Run `npm install` in a terminal to install required npm modules
- 
-6. Run `node uprofile.js` in a terminal to start your start your node application.
 
 ## About the code
-The code included in this sample is intended to get you quickly started with a Node.js console application that connects to Azure Cosmos DB with the Cassandra API.
+The code included in this sample is intended to get you quickly started with a Node.js console application that connects to Azure Cosmos DB with the Cassandra API. 
 
 ## More information
 
